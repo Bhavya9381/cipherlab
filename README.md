@@ -205,15 +205,6 @@ This project is an educational demonstration, not a production security tool.
 
 For real applications, use established cryptographic libraries and protocols such as AES-GCM or TLS rather than implementing cryptography manually.
 
-## Repository Details
-
-- **Suggested repository name:** `cipherlab`
-- **Short description:** `A browser-based cryptography learning tool with an interactive Caesar cipher.`
-- **Suggested commit message:** `Polish CipherLab UI and add project documentation`
-- **Author:** Bhavyasri Gunamgari
-- **LinkedIn:** <https://www.linkedin.com/in/bhavyasri-gunamgari-66b776278/>
-- **GitHub:** <https://github.com/Bhavya9381>
-
 ## License
 
 No license has been specified for this project yet. Add a license before distributing or accepting external contributions.
