@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherLab - Decryption</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://th.bing.com/th/id/OIP.dnElEuEAPDdJva0sT4jItgHaEK?w=284&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7') center/cover;
+            opacity: 1;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .nav_bar {
+            display: flex;
+            align-items: center;
+            background-color: #444;
+            padding: 10px 20px;
+        }
+
+        .nav_bar a {
+            color: aqua;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+        }
+
+        .nav_bar a:hover {
+            color: #fff;
+        }
+
+        .center-content {
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        h3 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        b {
+            color: #0066cc;
+        }
+
+        i {
+            color: #555;
+        }
+
+        .rsa {
+            font-style: italic;
+            color: #008000; /* Dark green */
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CipherLab</h1>
+        <nav class="nav_bar">
+            <a href="Home.html">Home</a>
+            <a href="Encryption.html">Encryption Info</a>
+            <a href="Decryption.html">Decryption Info</a>
+            <a href="hack.html">Shift Explorer</a>
+            <a href="About.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="center-content">
+        <h3>Decryption Information</h3>
+
+        <p>
+            Decryption is the process of converting encrypted or encoded information back into its original form, making it readable and understandable. Here are some key points about decryption and different techniques used:
+        </p>
+
+        <h3>Purpose of Decryption:</h3>
+        <p>
+            - The primary purpose of decryption is to reverse the process of encryption, allowing authorized users to access the original, plaintext information.
+            - It is a crucial component of secure communication and data protection, ensuring that only authorized parties can access sensitive information.
+        </p>
+
+        <h3>Key Components:</h3>
+        <p>
+            - <b>Cipher Text:</b> The encrypted form of the data, generated through an encryption algorithm.<br>
+            - <b>Decryption Key:</b> A secret key or algorithm that reverses the encryption process and transforms the ciphertext back into plaintext.
+        </p>
+
+        <h3>Types of Decryption Techniques:</h3>
+        <p>
+            a. <b>Symmetric Key Decryption:</b>
+            <ul>
+                <li>Involves using the same key for both encryption and decryption.</li>
+                <li>Fast and efficient, but requires secure key distribution between communicating parties.</li>
+                <li>Examples include DES (Data Encryption Standard), AES (Advanced Encryption Standard), and 3DES.</li>
+            </ul>
+        </p>
+
+        <h3>Challenges and Considerations:</h3>
+        <p>
+            - The security of decryption relies on the strength of the encryption algorithm and the secrecy of the keys.
+            - Advances in computing power and technology may render older decryption techniques obsolete, necessitating the use of stronger algorithms.
+        </p>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-details">
+            <p class="footer-author">Built by <strong>Bhavyasri Gunamgari</strong></p>
+            <nav class="footer-links" aria-label="Author links">
+                <a href="https://www.linkedin.com/in/bhavyasri-gunamgari-66b776278/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/Bhavya9381" target="_blank" rel="noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">&copy; 2026 Bhavyasri Gunamgari. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

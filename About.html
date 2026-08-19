@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherLab - Feedback</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color:whitesmoke;
+            z-index: -1 ;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .nav_bar {
+            display: flex;
+            align-items: center;
+            background-color: #444;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .nav_bar a {
+            color: aqua;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav_bar a:hover {
+            color: #fff;
+        }
+
+        .animated {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .center-image {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .center-image img {
+            width: 10%;
+            border-radius: 100px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feedback-area 
+        {
+            margin: 30px;
+            padding: 5px;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .feedback-area:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .contact-item img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .email-symbol::before {
+            content: '\2709'; 
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .phone-symbol::before {
+            content: '\260E'; 
+            font-size: 20px;
+            margin-right: 5px;
+        }
+        .feedback-area-animated 
+        {
+            margin: 20px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            color: #333;
+        }
+        
+
+    
+    .full video{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    @media(min-aspect-ratio: 16/9)
+    {
+        .full video
+        {
+            width: 100%;
+            height: auto;
+            opacity: 0.4;
+        }
+    }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="about-page">
+    <header>
+        <h1>CipherLab</h1>
+        <nav class="nav_bar animated">
+            <a href="Home.html">Home</a>
+            <a href="Encryption.html">Encryption Info</a>
+            <a href="Decryption.html">Decryption Info</a>
+            <a href="hack.html">Shift Explorer</a>
+            <a href="About.html">About Us</a>
+        </nav>
+    </header>
+<div class="full">
+    <div class="feedback-area-animated">
+        <p class="feedback-kicker">Help us improve CipherLab</p>
+        <h2>Share your feedback</h2>
+        <p class="feedback-intro">Tell us what was useful, what felt unclear, or what you would like to explore next.</p>
+        <label for="feedback">Your message</label>
+        <textarea id="feedback" rows="6" maxlength="1000" placeholder="Type your feedback here..."></textarea>
+        <div class="feedback-actions">
+            <button id="submit-feedback" type="button">Submit feedback</button>
+            <span class="feedback-limit">0 / 1000</span>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <button class="contact-item contact-disabled phone-symbol" type="button" aria-label="Phone contact" title="Phone contact">
+            <span class="sr-only">Phone contact</span>
+        </button>
+        <button class="contact-item contact-disabled email-symbol" type="button" aria-label="Email notifications" title="Email notifications">
+            <span class="sr-only">Email notifications</span>
+        </button>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-details">
+        <p class="footer-author">Built by <strong>Bhavyasri Gunamgari</strong></p>
+        <nav class="footer-links" aria-label="Author links">
+            <a href="https://www.linkedin.com/in/bhavyasri-gunamgari-66b776278/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/Bhavya9381" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+        <p class="footer-copyright">&copy; 2026 Bhavyasri Gunamgari. All rights reserved.</p>
+    </div>
+</footer>
+
+<div class="privacy-popup" role="alertdialog" aria-modal="true" aria-labelledby="privacy-popup-title" hidden>
+    <div class="privacy-popup-card">
+        <button class="privacy-popup-close" type="button" aria-label="Close privacy notice">&times;</button>
+        <p class="feedback-kicker">Privacy notice</p>
+        <h2 id="privacy-popup-title">Contact option unavailable</h2>
+        <p>Phone contact and email notifications are disabled for now due to privacy reasons.</p>
+        <button class="privacy-popup-ok" type="button">Understood</button>
+    </div>
+</div>
+
+<script>
+document.querySelector("#submit-feedback").addEventListener("click", function() {
+    const feedbackField = document.querySelector("#feedback");
+    const feedback = feedbackField.value.trim();
+    if (feedback === "") {
+        alert("Please enter your feedback before submitting!");
+        return;
+    }
+
+    const feedbackDisplay = document.createElement("div");
+    feedbackDisplay.className = "feedback-success";
+    feedbackDisplay.innerHTML = `
+        <strong>Thanks for sharing your feedback! &#128522;</strong>
+        <span>Your message helps make CipherLab better.</span>
+        <a href="mailto:bhavyareddy9381@gmail.com?subject=CipherLab%20Feedback&body=${encodeURIComponent(feedback)}">Send this feedback by email</a>
+    `;
+
+    document.querySelector(".feedback-area-animated").appendChild(feedbackDisplay);
+
+    // Clear the textarea
+    feedbackField.value = "";
+    updateFeedbackLimit();
+});
+
+const feedbackField = document.querySelector("#feedback");
+const feedbackLimit = document.querySelector(".feedback-limit");
+
+function updateFeedbackLimit() {
+    feedbackLimit.textContent = `${feedbackField.value.length} / 1000`;
+}
+
+feedbackField.addEventListener("input", updateFeedbackLimit);
+updateFeedbackLimit();
+
+const privacyPopup = document.querySelector(".privacy-popup");
+const closePrivacyPopup = () => { privacyPopup.hidden = true; };
+document.querySelectorAll(".contact-disabled").forEach((contactButton) => {
+    contactButton.addEventListener("click", () => { privacyPopup.hidden = false; });
+});
+document.querySelector(".privacy-popup-close").addEventListener("click", closePrivacyPopup);
+document.querySelector(".privacy-popup-ok").addEventListener("click", closePrivacyPopup);
+privacyPopup.addEventListener("click", (event) => {
+    if (event.target === privacyPopup) closePrivacyPopup();
+});
+</script>
+
+
+</body>
+
+</html>

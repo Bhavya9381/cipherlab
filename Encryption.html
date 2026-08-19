@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CipherLab - Encryption</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://th.bing.com/th/id/OIP.dnElEuEAPDdJva0sT4jItgHaEK?w=284&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7') center/cover;
+            opacity: 1;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        .nav_bar {
+            display: flex;
+            align-items: center;
+            background-color: #444;
+            padding: 10px 20px;
+        }
+
+        .nav_bar a {
+            color: aqua;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 15px;
+        }
+
+        .nav_bar a:hover {
+            color: #fff;
+        }
+
+        .center-content {
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        h3 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        b {
+            color: #0066cc;
+        }
+
+        i {
+            color: #555;
+        }
+
+        .rsa {
+            font-style: italic;
+            color: #008000; /* Dark green */
+        }
+
+        .highlight {
+            background-color: #e6f7ff; /* Light blue */
+            padding: 5px;
+            border-radius: 5px;
+            display: inline;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CipherLab</h1>
+        <nav class="nav_bar">
+            <a href="Home.html">Home</a>
+            <a href="Encryption.html">Encryption Info</a>
+            <a href="Decryption.html">Decryption Info</a>
+            <a href="hack.html">Shift Explorer</a>
+            <a href="About.html">About Us</a>
+        </nav>
+    </header>
+
+
+    <div class="center-content">
+        <h3>Encryption is a crucial aspect of information security...</h3>
+
+        <p>
+            <b>Definition of Encryption:</b><br>
+            Encryption is the process of converting plaintext (readable data) into ciphertext (unreadable data) using an algorithm and a key. The goal is to ensure that only authorized individuals can access and understand the original information.
+        </p>
+
+        <h3>Key Components of Encryption:</h3>
+        <p>
+            - <b>Plaintext:</b> <i>The original, readable data.</i><br>
+            - <b>Ciphertext:</b> <i>The encrypted, unreadable data.</i><br>
+            - <b>Encryption Algorithm:</b> <i>A mathematical function or set of rules that performs the encryption.</i><br>
+            - <b>Key:</b> <i>A secret parameter used by the algorithm to perform encryption and decryption.</i><br>
+        </p>
+
+        <h3>Types of Encryption Techniques:</h3>
+        <p>
+            - <b>Symmetric Encryption:</b> Uses a single key for both encryption and decryption. Fast and efficient, but the challenge lies in securely distributing and managing the key. Common algorithms include DES (Data Encryption Standard), 3DES, AES (Advanced Encryption Standard).
+        </p>
+
+        <p>
+            - <b>Asymmetric Encryption:</b> <i>Uses a pair of public and private keys. Public key is used for encryption, while the private key is used for decryption. <span class="rsa">RSA (Rivest-Shamir-Adleman)</span> and ECC (Elliptic Curve Cryptography) are popular asymmetric encryption algorithms.</i>
+        </p>
+
+        <h3>Challenges in Encryption:</h3>
+        <p>
+            - <b>Key Management:</b> Safely generating, distributing, and storing encryption keys.<br>
+            - <b>Performance:</b> Some encryption methods can introduce computational overhead.<br>
+            - <b>Cryptanalysis:</b> The study of breaking cryptographic systems, emphasizing the importance of algorithm strength.
+        </p>
+
+        <h3>Importance of Encryption:</h3>
+        <p>
+            - <b>Confidentiality:</b> Protects data from unauthorized access.<br>
+            - <b>Integrity:</b> Ensures data remains unaltered during transmission or storage.<br>
+            - <b>Authentication:</b> Verifies the identity of communicating parties.<br>
+            - <b>Non-repudiation:</b> Prevents a party from denying its involvement in a communication.
+        </p>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-details">
+            <p class="footer-author">Built by <strong>Bhavyasri Gunamgari</strong></p>
+            <nav class="footer-links" aria-label="Author links">
+                <a href="https://www.linkedin.com/in/bhavyasri-gunamgari-66b776278/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="https://github.com/Bhavya9381" target="_blank" rel="noreferrer">GitHub</a>
+            </nav>
+            <p class="footer-copyright">&copy; 2026 Bhavyasri Gunamgari. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
